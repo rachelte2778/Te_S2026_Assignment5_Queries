@@ -95,7 +95,7 @@ JOIN task
 JOIN assignment
     ON task.taskCode = assignment.taskCode
 GROUP BY task_status.taskStatusName
-ORDER BY COUNT(assignment.volunteerId) DESC;
+ORDER BY volunteerCount DESC;
 
 -- 12 -- 
 SELECT task.taskCode, 
